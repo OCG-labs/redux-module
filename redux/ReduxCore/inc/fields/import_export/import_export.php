@@ -132,6 +132,10 @@ if( !class_exists( 'Redux_import_export' ) ) {
             }
         }
         
+        public function in_field(){
+            $this->is_field = Redux_Helpers::isFieldInUse($this->parent, 'import_export');
+        }
+        
         public function render_tab(){
             echo '<li id="import_export_default_section_group_li" class="redux-group-tab-link-li">';
 
